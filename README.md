@@ -54,13 +54,12 @@ A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CS
 Clone the repository:
 git clone <https://github.com/Luckymishraa/personal-expense-tracker.git>
 
-
 cd personal-expense-tracker
 
-Install dependencies:
+# Install dependencies:
 npm install
 
-Start the backend (Node.js + Express + MongoDB):
+# Start the backend (Node.js + Express + MongoDB):
 
 cd backend
 
@@ -68,7 +67,7 @@ npm install
 
 npm start
 
-Start the frontend:
+# Start the frontend:
 
 cd frontend
 
@@ -88,7 +87,7 @@ Summary & Chart: See total expenses and category-wise pie chart update automatic
 
 ### Assumptions & Design
 
-Assumptions:
+## Assumptions:
 
 Each expense has a unique ID from the backend database.
 
@@ -99,7 +98,7 @@ Category must be selected; note is optional.
 Date defaults to the current timestamp if not provided.
 
 
-Design Choices:
+## Design Choices:
 
 Frontend: React.js + Tailwind CSS for responsive, modern UI.
 
@@ -116,7 +115,7 @@ Filters & Summaries: Client-side filtering and aggregation for instant updates.
 
 ### Sample Inputs / Outputs
 
-Add Expense Input:
+## Add Expense Input:
 
 {
 
@@ -131,7 +130,7 @@ Add Expense Input:
 }
 
 
-Sample Output (View Expenses):
+## Sample Output (View Expenses):
 
 Title	Amount	Category	Note	Date/Time
 
@@ -140,7 +139,7 @@ Lunch at Cafe	₹450	Food	With friends	2025-10-05 12:30
 Movie Tickets	₹400	Entertainment	Avengers movie	2025-10-04 20:00
 
 
-Chart Visualization:
+## Chart Visualization:
 
 Food: 38%
 
