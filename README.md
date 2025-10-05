@@ -1,2 +1,154 @@
 # personal-expense-tracker
-Full-stack Expense Tracker (React + Express + MongoDB)
+Personal Expense Tracker
+
+A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CSS. Track your daily expenses, categorize them, and visualize spending patterns with charts. Includes CRUD operations, filtering, and real-time summaries.
+
+Table of Contents
+
+Features
+
+Screenshots
+
+Installation
+
+Usage
+
+Assumptions & Design
+
+Sample Inputs/Outputs
+
+Future Enhancements
+
+Features
+Must-Have (Implemented)
+
+Add Expense: Enter title, amount, category, note, and date.
+
+View Expenses: List of all expenses with category badges, notes, and timestamps.
+
+Edit Expense: Modify any expense inline.
+
+Delete Expense: Remove expenses with confirmation modal.
+
+Save Data: Data persists via backend API (MongoDB).
+
+Validation: Inline validation messages, positive amount check, required fields.
+
+Optional / Good-to-Have (Implemented)
+
+Categories: Food, Travel, Shopping, Bills, Entertainment, Other.
+
+Filters: By date range and category.
+
+Summary Reports: Total spent and per-category breakdown.
+
+Charts: Pie chart visualization of spending per category.
+
+Responsive & Modern UI: Tailwind CSS with hover effects and gradients.
+
+Screenshots
+
+(Add your own screenshots here, e.g., desktop, mobile, charts)
+
+Installation
+
+Clone the repository:
+
+git clone <YOUR_REPO_URL>
+cd personal-expense-tracker
+
+
+Install dependencies:
+
+npm install
+
+
+Start the backend (assuming Node.js + Express + MongoDB):
+
+cd backend
+npm install
+npm start
+
+
+Start the frontend:
+
+cd frontend
+npm start
+
+
+Open http://localhost:3000
+ in your browser.
+
+Usage
+
+Add Expense: Click “Add Expense”, fill the form, and submit.
+
+View Expenses: Check the expense list, use filters to narrow by category or date.
+
+Edit/Delete Expense: Use Edit or Delete buttons in the expense cards.
+
+Summary & Chart: See total expenses and category-wise pie chart update automatically.
+
+Assumptions & Design
+
+Assumptions:
+
+Each expense has a unique ID from the backend database.
+
+Amount is in ₹ (INR).
+
+Category must be selected; note is optional.
+
+Date defaults to the current timestamp if not provided.
+
+Design Choices:
+
+Frontend: React.js + Tailwind CSS for responsive, modern UI.
+
+Backend: REST API (Node.js + Express) with MongoDB for data persistence.
+
+State Management: React useState and useEffect.
+
+Charts: react-chartjs-2 for category visualization.
+
+Validation: Inline, real-time feedback instead of alert()s.
+
+Filters & Summaries: Client-side filtering and aggregation for instant updates.
+
+Sample Inputs / Outputs
+
+Add Expense Input:
+
+{
+  "title": "Lunch at Cafe",
+  "amount": 450,
+  "category": "Food",
+  "note": "With friends"
+}
+
+
+Sample Output (View Expenses):
+
+Title	Amount	Category	Note	Date/Time
+Lunch at Cafe	₹450	Food	With friends	2025-10-05 12:30
+Movie Tickets	₹400	Entertainment	Avengers movie	2025-10-04 20:00
+
+Chart Visualization: Pie chart shows:
+
+Food: 38%
+
+Entertainment: 62%
+
+Future Enhancements
+
+User authentication and multi-user support.
+
+Monthly and yearly reports with graphs.
+
+Export to CSV / PDF functionality.
+
+Recurring expenses and budget alerts.
+
+License
+
+This project is for educational/demo purposes.
