@@ -75,7 +75,7 @@ npm start
 
 Open http://localhost:3000 in your browser.
 
-### Usage
+## Usage
 
 Add Expense: Click “Add Expense”, fill the form, and submit.
 
@@ -85,7 +85,7 @@ Edit/Delete Expense: Use Edit or Delete buttons in the expense cards.
 
 Summary & Chart: See total expenses and category-wise pie chart update automatically.
 
-### Assumptions & Design
+## Assumptions & Design
 
 ## Assumptions:
 
@@ -100,20 +100,20 @@ Date defaults to the current timestamp if not provided.
 
 ## Design Choices:
 
-Frontend: React.js + Tailwind CSS for responsive, modern UI.
+- **Frontend:** React.js + Tailwind CSS for responsive, modern UI.
 
-Backend: REST API (Node.js + Express) with MongoDB for data persistence.
+- **Backend:** REST API (Node.js + Express) with MongoDB for data persistence.
 
-State Management: React useState and useEffect.
+- **State Management:** React useState and useEffect.
 
-Charts: react-chartjs-2 for category visualization.
+- **Charts:** react-chartjs-2 for category visualization.
 
-Validation: Inline, real-time feedback instead of alert()s.
+- **Validation:** Inline, real-time feedback instead of alert()s.
 
-Filters & Summaries: Client-side filtering and aggregation for instant updates.
+- **Filters & Summaries:** Client-side filtering and aggregation for instant updates.
 
 
-### Sample Inputs / Outputs
+## Sample Inputs / Outputs
 
 ## Add Expense Input:
 
