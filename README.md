@@ -50,91 +50,68 @@ A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CS
 
 # **Installation**
 
+
 Clone the repository:
-
-```bash
-git clone <YOUR_REPO_URL>
+git clone <https://github.com/Luckymishraa/personal-expense-tracker.git>
 cd personal-expense-tracker
+
 Install dependencies:
-
-bash
-Copy code
 npm install
-Start the backend (assuming Node.js + Express + MongoDB):
 
-bash
-Copy code
+Start the backend (Node.js + Express + MongoDB):
 cd backend
 npm install
 npm start
-Start the frontend:
 
-bash
-Copy code
+Start the frontend:
 cd frontend
 npm start
+
 Open http://localhost:3000 in your browser.
 
-Usage
+### Usage
 Add Expense: Click “Add Expense”, fill the form, and submit.
-
 View Expenses: Check the expense list, use filters to narrow by category or date.
-
 Edit/Delete Expense: Use Edit or Delete buttons in the expense cards.
-
 Summary & Chart: See total expenses and category-wise pie chart update automatically.
 
-Assumptions & Design
+### Assumptions & Design
+
 Assumptions:
 Each expense has a unique ID from the backend database.
-
 Amount is in ₹ (INR).
-
 Category must be selected; note is optional.
-
 Date defaults to the current timestamp if not provided.
 
 Design Choices:
 Frontend: React.js + Tailwind CSS for responsive, modern UI.
-
 Backend: REST API (Node.js + Express) with MongoDB for data persistence.
-
 State Management: React useState and useEffect.
-
 Charts: react-chartjs-2 for category visualization.
-
 Validation: Inline, real-time feedback instead of alert()s.
-
 Filters & Summaries: Client-side filtering and aggregation for instant updates.
 
-Sample Inputs / Outputs
-Add Expense Input:
+### Sample Inputs / Outputs
 
-json
-Copy code
+Add Expense Input:
 {
   "title": "Lunch at Cafe",
   "amount": 450,
   "category": "Food",
   "note": "With friends"
 }
-Sample Output (View Expenses):
 
+Sample Output (View Expenses):
 Title	Amount	Category	Note	Date/Time
 Lunch at Cafe	₹450	Food	With friends	2025-10-05 12:30
 Movie Tickets	₹400	Entertainment	Avengers movie	2025-10-04 20:00
 
-Chart Visualization: Pie chart shows:
-
+Chart Visualization:
 Food: 38%
-
 Entertainment: 62%
 
-Future Enhancements
+### Future Enhancements
 User authentication and multi-user support.
-
 Monthly and yearly reports with graphs.
-
 Export to CSV / PDF functionality.
-
 Recurring expenses and budget alerts.
