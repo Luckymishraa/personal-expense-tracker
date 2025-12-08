@@ -1,4 +1,5 @@
 # **Personal Expense Tracker**
+
 Personal Expense Tracker
 
 A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CSS. Track your daily expenses, categorize them, and visualize spending patterns with charts. Includes CRUD operations, filtering, and real-time summaries.
@@ -7,32 +8,34 @@ A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CS
 
 # **Table of Contents**
 
-- Features  
-- Screenshots  
-- Installation  
-- Usage  
-- Assumptions & Design  
-- Sample Inputs/Outputs  
-- Future Enhancements  
+- Features
+- Screenshots
+- Installation
+- Usage
+- Assumptions & Design
+- Sample Inputs/Outputs
+- Future Enhancements
 
 ---
 
 # **Features**
 
 ### Must-Have (Implemented)
-- **Add Expense:** Enter title, amount, category, note, and date.  
-- **View Expenses:** List of all expenses with category badges, notes, and timestamps.  
-- **Edit Expense:** Modify any expense inline.  
-- **Delete Expense:** Remove expenses with confirmation modal.  
-- **Save Data:** Data persists via backend API (MongoDB).  
-- **Validation:** Inline validation messages, positive amount check, required fields.  
+
+- **Add Expense:** Enter title, amount, category, note, and date.
+- **View Expenses:** List of all expenses with category badges, notes, and timestamps.
+- **Edit Expense:** Modify any expense inline.
+- **Delete Expense:** Remove expenses with confirmation modal.
+- **Save Data:** Data persists via backend API (MongoDB).
+- **Validation:** Inline validation messages, positive amount check, required fields.
 
 ### Optional / Good-to-Have (Implemented)
-- **Categories:** Food, Travel, Shopping, Bills, Entertainment, Other.  
-- **Filters:** By date range and category.  
-- **Summary Reports:** Total spent and per-category breakdown.  
-- **Charts:** Pie chart visualization of spending per category.  
-- **Responsive & Modern UI:** Tailwind CSS with hover effects and gradients.  
+
+- **Categories:** Food, Travel, Shopping, Bills, Entertainment, Other.
+- **Filters:** By date range and category.
+- **Summary Reports:** Total spent and per-category breakdown.
+- **Charts:** Pie chart visualization of spending per category.
+- **Responsive & Modern UI:** Tailwind CSS with hover effects and gradients.
 
 ---
 
@@ -50,13 +53,13 @@ A modern, responsive Expense Tracker built with React.js, Axios, and Tailwind CS
 
 # **Installation**
 
-
 Clone the repository:
 git clone <https://github.com/Luckymishraa/personal-expense-tracker.git>
 
 cd personal-expense-tracker
 
 # Install dependencies:
+
 npm install
 
 # Start the backend (Node.js + Express + MongoDB):
@@ -97,7 +100,6 @@ Category must be selected; note is optional.
 
 Date defaults to the current timestamp if not provided.
 
-
 ## Design Choices:
 
 - **Frontend:** React.js + Tailwind CSS for responsive, modern UI.
@@ -112,39 +114,35 @@ Date defaults to the current timestamp if not provided.
 
 - **Filters & Summaries:** Client-side filtering and aggregation for instant updates.
 
-
 ## Sample Inputs / Outputs
 
 ## Add Expense Input:
 
 {
 
-  "title": "Lunch at Cafe",
+"title": "Lunch at Cafe",
 
-  "amount": 450,
+"amount": 450,
 
-  "category": "Food",
+"category": "Food",
 
-  "note": "With friends"
+"note": "With friends"
 
 }
 
-
 ## Sample Output (View Expenses):
 
-Title	Amount	Category	Note	Date/Time
+Title Amount Category Note Date/Time
 
-Lunch at Cafe	₹450	Food	With friends	2025-10-05 12:30
+Lunch at Cafe ₹450 Food With friends 2025-10-05 12:30
 
-Movie Tickets	₹400	Entertainment	Avengers movie	2025-10-04 20:00
-
+Movie Tickets ₹400 Entertainment Avengers movie 2025-10-04 20:00
 
 ## Chart Visualization:
 
 Food: 38%
 
 Entertainment: 62%
-
 
 ### Future Enhancements
 
@@ -155,4 +153,3 @@ Monthly and yearly reports with graphs.
 Export to CSV / PDF functionality.
 
 Recurring expenses and budget alerts.
-

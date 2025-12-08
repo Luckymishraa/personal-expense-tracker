@@ -1,6 +1,6 @@
 import { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import backendapi from "../backendapi";
 
 export default function AddExpense() {
   const [title, setTitle] = useState("");
@@ -14,7 +14,8 @@ export default function AddExpense() {
     const newErrors = {};
 
     if (!title.trim()) newErrors.title = "Title is required.";
-    else if (title.length > 50) newErrors.title = "Title must be ≤ 50 characters.";
+    else if (title.length > 50)
+      newErrors.title = "Title must be ≤ 50 characters.";
 
     if (!amount) newErrors.amount = "Amount is required.";
     else if (Number(amount) <= 0) newErrors.amount = "Amount must be positive.";
@@ -32,12 +33,13 @@ export default function AddExpense() {
     if (!validate()) return;
 
     try {
-      await axios.post("http://localhost:5000/api/expenses", {
+      await backendapi.post("/api/expenses", {
         title: title.trim(),
         amount: Number(amount),
         category,
         note: note.trim(),
       });
+
       navigate("/viewexpenses");
     } catch (err) {
       console.error("Error adding expense:", err);
@@ -67,7 +69,9 @@ export default function AddExpense() {
               placeholder="Enter expense title"
               className={inputClass}
             />
-            {errors.title && <p className="text-red-500 text-sm mt-1">{errors.title}</p>}
+            {errors.title && (
+              <p className="text-red-500 text-sm mt-1">{errors.title}</p>
+            )}
           </div>
 
           {/* Amount */}
@@ -82,7 +86,9 @@ export default function AddExpense() {
               placeholder="Enter amount"
               className={inputClass}
             />
-            {errors.amount && <p className="text-red-500 text-sm mt-1">{errors.amount}</p>}
+            {errors.amount && (
+              <p className="text-red-500 text-sm mt-1">{errors.amount}</p>
+            )}
           </div>
 
           {/* Category */}
@@ -119,11 +125,15 @@ export default function AddExpense() {
               rows="3"
               className={inputClass}
             />
-            {errors.note && <p className="text-red-500 text-sm mt-1">{errors.note}</p>}
+            {errors.note && (
+              <p className="text-red-500 text-sm mt-1">{errors.note}</p>
+            )}
           </div>
 
           {/* Submit Error */}
-          {errors.submit && <p className="text-red-500 text-center">{errors.submit}</p>}
+          {errors.submit && (
+            <p className="text-red-500 text-center">{errors.submit}</p>
+          )}
 
           {/* Button */}
           <button
