@@ -13,7 +13,7 @@ app.use("/api/expenses", expensesRoute);
 
 // Use Atlas URI when running on Render, else use env/local
 const ATLAS_URI =
-  "mongodb+srv://luckymishra233:Lucky123@cluster0.91cw6os.mongodb.net/expense-tracker?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://luckymishra233:Lucky12345@cluster0.91cw6os.mongodb.net/expense-tracker?retryWrites=true&w=majority&appName=Cluster0";
 
 const MONGO_URI =
   process.env.RENDER === "true"
